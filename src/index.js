@@ -9,18 +9,18 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.css';
 
 import 'jquery/dist/jquery.js';
-setInterval(async () => {
-  axios.get("https://zany-periodic-fisherman.glitch.me/test").then(data=>{
-  console.log(data)
-})
-.catch(e=>{
-  console.log(e.response)
-})
-},60 * 1000)
+// setInterval(async () => {
+//   axios.get("https://zany-periodic-fisherman.glitch.me/test").then(data=>{
+//   console.log(data)
+// })
+// .catch(e=>{
+//   console.log(e.response)
+// })
+// },60 * 1000)
 
 
 //axios.defaults.baseURL = 'http://localhost:3001/api';
-axios.defaults.baseURL = 'https://zany-periodic-fisherman.glitch.me/api';
+axios.defaults.baseURL = 'http://localhost:3001/api';
     let userData =  JSON.parse(localStorage.getItem("userData"))
     let token
     if(userData){
